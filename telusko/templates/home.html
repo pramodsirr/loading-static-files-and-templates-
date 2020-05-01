@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+           &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp;        <h1>hello {{titles}}</h1>        <br>
+<form action="jod" method="POST">
+     {% csrf_token %}
+enter 1st num: <input type="text" name="text1"><br>
+enter 2nd num: <input type="text" name="text2"> <br>
+     &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp;
+    &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp;
+    &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp;
+    <input type="submit">
+</form>
+{%    endblock %}
+</body>
+</html>
